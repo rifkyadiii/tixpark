@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:paddingHorizontal="30dp"
+    tools:context=".fragments.BookingFragment">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbarLogin"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:gravity="start|bottom"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"
+        android:layout_marginStart="-15dp"
+        android:layout_marginEnd="-15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+    </com.google.android.material.appbar.MaterialToolbar>
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Booking"
+        android:textColor="@color/red"
+        android:fontFamily="@font/poppins"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarLogin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <LinearLayout
+        android:id="@+id/textFielLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitle"
+        android:background="@drawable/round_gray_bg"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/ivLocationIcon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="20dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_location"
+            app:tint="@color/black50" />
+
+
+        <EditText
+            android:id="@+id/etUsername"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:padding="10dp"
+            android:textColorHint="@color/black50"
+            android:hint="Location"
+            android:fontFamily="@font/poppins"
+            android:textSize="16sp"
+            android:background="@color/transparent"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/textFieldName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/textFielLocation"
+        android:background="@drawable/round_gray_bg"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/ivNameIcon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_user"
+            android:layout_marginStart="20dp"
+            app:tint="@color/black50" />
+
+
+        <EditText
+            android:id="@+id/etName"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:padding="10dp"
+            android:textColorHint="@color/black50"
+            android:hint="Name"
+            android:fontFamily="@font/poppins"
+            android:textSize="16sp"
+            android:background="@color/transparent"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/textFieldLicense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/textFieldName"
+        android:background="@drawable/round_gray_bg"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/ivLicenseIcon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="20dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_license"
+            app:tint="@color/black50" />
+
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:padding="10dp"
+            android:textColorHint="@color/black50"
+            android:hint="License Number"
+            android:fontFamily="@font/poppins"
+            android:textSize="16sp"
+            android:background="@color/transparent"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/textFieldVehicle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/round_gray_bg"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/textFieldLicense">
+
+        <ImageView
+            android:id="@+id/ivVehicleIcon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="20dp"
+            android:src="@drawable/ic_vehicle"
+            app:tint="@color/black50" />
+
+        <AutoCompleteTextView
+            android:id="@+id/etVehicle"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:padding="10dp"
+            android:hint="Vehicle Type"
+            android:fontFamily="@font/poppins"
+            android:textSize="16sp"
+            android:textColorHint="@color/black50"
+            android:background="@color/transparent"
+            android:focusable="false"
+            android:clickable="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/textFieldDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/round_gray_bg"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/textFieldVehicle">
+
+        <ImageView
+            android:id="@+id/ivDateIcon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="20dp"
+            android:src="@drawable/ic_date"
+            app:tint="@color/black50" />
+
+        <EditText
+            android:id="@+id/etDate"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:padding="10dp"
+            android:hint="Date"
+            android:fontFamily="@font/poppins"
+            android:textSize="16sp"
+            android:textColorHint="@color/black50"
+            android:background="@color/transparent"
+            android:focusable="false"
+            android:clickable="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/textFieldTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/round_gray_bg"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/textFieldDate">
+
+        <ImageView
+            android:id="@+id/ivTimeIcon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="20dp"
+            android:src="@drawable/ic_time"
+            app:tint="@color/black50" />
+
+        <EditText
+            android:id="@+id/etTime"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:padding="10dp"
+            android:hint="Time"
+            android:fontFamily="@font/poppins"
+            android:textSize="16sp"
+            android:textColorHint="@color/black50"
+            android:background="@color/transparent"
+            android:focusable="false"
+            android:clickable="true" />
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnContinue"
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:text="Continue"
+        android:fontFamily="@font/poppins"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="90dp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:background="@drawable/round_red_bg"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

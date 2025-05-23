@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="DialogTheme" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorPrimary">@color/red</item>
+        <item name="colorOnPrimary">@color/red</item>
+        <item name="colorOnSurface">@color/red</item>
+        <item name="colorAccent">@color/red</item>
+    </style>
+
+    <style name="SaldoRadioStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_columnWeight">1</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:button">@color/transparent</item>
+        <item name="android:background">@drawable/grid_saldo_selector</item>
+        <item name="android:textColor">@drawable/grid_text_saldo_selector</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:layout_margin">6dp</item>
+    </style>
+
+    <style name="CustomSmallTabs" parent="Widget.Design.TabLayout">
+        <item name="tabPaddingStart">2dp</item>
+        <item name="tabPaddingEnd">2dp</item>
+        <item name="tabPaddingTop">2dp</item>
+        <item name="tabPaddingBottom">2dp</item>
+        <item name="android:minWidth">0dp</item>
+    </style>
+
+</resources>

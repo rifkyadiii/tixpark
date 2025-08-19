@@ -77,7 +77,20 @@ Ikuti langkah-langkah berikut untuk menjalankan proyek ini di lingkungan pengemb
 -----
 
 ## 📸 Tampilan Aplikasi (Screenshots)
-|----------|----------|----------|
-| <img src="https://github.com/user-attachments/assets/51531edb-2d8b-4be5-b2c7-ead21bfd9eef" width="250"> | <img src="https://github.com/user-attachments/assets/fa85cffe-4be8-456d-8d30-a611a594bc4d" width="250"> | <img src="https://github.com/user-attachments/assets/b4d8ea70-9b4a-4446-819f-128d6cdacf67" width="250"> |
-| <img src="https://github.com/user-attachments/assets/b7759b6d-5e33-4811-9032-1448dd2f1664" width="250"> | <img src="https://github.com/user-attachments/assets/b6e41583-d78e-44f3-b4e3-c15fe946c230" width="250"> | <img src="https://github.com/user-attachments/assets/5a4ac107-4b73-440b-954a-1218dfa88b93" width="250"> |
-| <img src="https://github.com/user-attachments/assets/f07345ae-c9af-4e6f-b04c-6544e71b9ab4" width="250"> | <img src="https://github.com/user-attachments/assets/f42cc7bf-9a08-425d-af70-9e2823db8f54" width="250"> |   |
+<table>
+  <tr>
+    <td><img src="https://github.com/user-attachments/assets/51531edb-2d8b-4be5-b2c7-ead21bfd9eef" width="250"></td>
+    <td><img src="https://github.com/user-attachments/assets/fa85cffe-4be8-456d-8d30-a611a594bc4d" width="250"></td>
+    <td><img src="https://github.com/user-attachments/assets/b4d8ea70-9b4a-4446-819f-128d6cdacf67" width="250"></td>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/user-attachments/assets/b7759b6d-5e33-4811-9032-1448dd2f1664" width="250"></td>
+    <td><img src="https://github.com/user-attachments/assets/b6e41583-d78e-44f3-b4e3-c15fe946c230" width="250"></td>
+    <td><img src="https://github.com/user-attachments/assets/5a4ac107-4b73-440b-954a-1218dfa88b93" width="250"></td>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/user-attachments/assets/f07345ae-c9af-4e6f-b04c-6544e71b9ab4" width="250"></td>
+    <td><img src="https://github.com/user-attachments/assets/f42cc7bf-9a08-425d-af70-9e2823db8f54" width="250"></td>
+    <td></td>
+  </tr>
+</table>
